@@ -1,0 +1,62 @@
+  100  ssh ubuntu -t ansible 192.168.88.142
+  101  ssh ubuntu -t ansible ubuntu3@192.168.88.142
+  102  ssh ubuntu -t ansible ubuntu3@192.168.88.14
+  104  ssh ubuntu -t ansible ubuntu-3@192.168.88.141
+  105  ssh -t ansible ubuntu-3@192.168.88.141
+  106  ssh -i ansible ubuntu3@192.168.88.14
+  107  ssh -i ansible ubuntu3@192.168.88.142
+  108  ssh -i ansible ubuntu-3@192.168.88.142
+  109  ssh -i ansible ubuntu1@192.168.88.142
+  110  ssh -i ansible ubuntu1@192.168.88.141
+  111  ssh -i ansible ubuntu-3@192.168.88.141
+  112  ssh -i ansible ubuntu1@192.168.88.142
+  113  ssh -i ansible ubuntu1@192.168.88.140
+  114  ssh -i ansible ubuntu-3@192.168.88.141 
+  115  ssh -i ansible ubuntu3@192.168.88.142
+  116  ansible -v
+  133  git clone git@github.com:Surkew777/ansible_repo.git
+  135  cd ansible_repo
+  144  git clone git@github.com:Surkew777/ansible_repo.git
+  145  cd ansible_repo
+  154  sudo apt-add-repository ppa:ansible/ansible
+  156  sudo apt install ansible
+  157  ansible --version
+  160  cd ansible_repo
+  161  ansible all --key-file ~/ansible -i inventory -m ping
+  165  cd ansible_repo
+  166* cat ~/ansible.pub
+  167  ansible all --key-file /home/machine2/ansible -i inventory -m ping
+  169  cd ansible_repo
+  172  ansible all --key-file /home/machine2/ansible -i inventory -m ping
+  173  ansible all --key-file ~/ansible -i inventory -m ping
+  175  ansible all --key-file ~/ansible -i inventory -m ping
+  183  ansible all --key-file ~/ansible -i inventory -m ping
+  184  code ansible.cfg
+  186  cat ansible.cfg
+  188  ls -al /etc/ansible
+  189  cat /etc/ansible/ansible.cfg
+  190  ansible all -m ping
+  191  ansible all --list host 
+  192  ansible all --list-hosts
+  193  ansible all -m gather_facts
+  194  ansible all -m gather_facts --limit ubuntu3@192.168.88.142
+  198  git commit -m "First ansible commit "
+  201  code First-ansible.txt
+  206  sudo ansible all -m apt
+  207  sudo ansible all -m apt -a update_cache=true
+  208  ansible all -m apt -a update_cache=true
+  209  ansible all -m gather_facts
+  210  sudo ansible all -m apt -a update_cache=true --become --ask-become-pass
+  211  ansible all -m apt -a update_cache=true --become --ask-become-pass
+  212  ansible all -m apt name=vim-nox --become --ask-become-pass 
+  213  ansible all -m apt -a name=vim-nox --become --ask-become-pass 
+  214  ansible all -m apt -a name=tmux --become --ask-become-pass 
+  222  ansible all -m apt -a name=snapd --become --ask-become-pass 
+  224  cd ansible_repo
+  226  ansible all -m apt -a name=snapd --become --ask-become-pass 
+  227  ansible all -m apt -a "name=snapd state=latest" --become --ask-become-pass 
+  232  ansible-playbook install-vscode.yaml -i inventory
+  233  ansible-playbook install-vscode.yaml -i inventory --become --ask-become-pass 
+  234  ansible all -m apt -a "upgrade-dist" --become --ask-become-pass 
+  235  ansible all -m apt -a "upgrade=dist" --become --ask-become-pass 
+  236  history | grep "ansible" | tee ansible_2
