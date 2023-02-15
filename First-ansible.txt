@@ -1,0 +1,199 @@
+2  sudo apt upgrade 
+    3  cd
+    4  sudp apt upgrade 
+    5  sudo apt upgrade 
+    6  ps -a
+    7  kill 7873 
+    8  kill 34953
+    9  kill 35161
+   10  sudo apt iupdate 
+   11  sudo apt update 
+   12  sudo apt upgrade 
+   13  ps -a
+   14  kill 7873
+   15  kill 44769
+   16  sudo kill 44769
+   17  sudo kill 44770
+   18  sudo apt update
+   19  sudo apt upgrade -y
+   20  ifconfig
+   21  sudo apt install net-tools
+   22  ifconfig
+   23  ping
+   24  ping 192.168.88.128
+   25  sudo apt install openssh-server
+   26  systemctl status ssh
+   27  cd /ssh
+   28  cd /etc/ssh/ssh_config
+   29  sudo nano /etc/ssh/ssh_config
+   30  cat  nano /etc/ssh/ssh_config
+   31  reboot
+   32  ls
+   33  ifconfig
+   34  ls
+   35  ip addr show
+   36  ls
+   37  ll
+   38  ls
+   39  rm file.txt
+   40  ll
+   41  ls
+   42  ssh machine2@192.168.88.130
+   43  cd .ssh
+   44  ls
+   45  cat known_hosts
+   46  cd
+   47  ls
+   48  ll
+   49  cd .ssh
+   50  ll
+   51  cd
+   52  ssh-keygen -t ed25519 -C "My_Key_Comment"
+   53  ll
+   54  cd .ssh
+   55  ll
+   56  cat id_ed25519.pubcd
+   57  cd
+   58  ll
+   59  ssh-copy-id machine2@192.168.88.130
+   60  ssh machine2@192.168.88.130
+   61  ssh-copy-id machine2@192.168.88.128
+   62  ssh-copy-id machine1@192.168.88.128
+   63  ll
+   64  ls
+   65  whoami
+   66  hostnamectl set-hostname machine1
+   67  whoami
+   68  reboot
+   69  sudo apt update 
+   70  sudo apt upgrade -y
+   71  ls
+   72  whoami
+   73  hostname 
+   74  whoami
+   75  man hostname
+   76  ifconfig
+   77  ls
+   78  cd Desktop
+   79  ls
+   80  whoami
+   81  ifconfig
+   82  cd
+   83  ls
+   84  cd .ssh
+   85  ls
+   86  cat *
+   87  ssh 192.168.88.140
+   88  ssh ubuntu1@192.168.88.140
+   89  ssh ubuntu-3@192.168.88.141
+   90  ssh ubuntu3@192.168.88.142
+   91  ls
+   92  nano 
+   93  nano ssh_keys.py
+   94  chmod +x ssh_keys.py
+   95  nano ssh_keys.py
+   96  ./nano ssh_keys.py
+   97  ./ssh_keys.py
+   98  nano ssh_keys.py
+   99  ./ssh_keys.py
+  100  ssh ubuntu -t ansible 192.168.88.142
+  101  ssh ubuntu -t ansible ubuntu3@192.168.88.142
+  102  ssh ubuntu -t ansible ubuntu3@192.168.88.14
+  103  ls
+  104  ssh ubuntu -t ansible ubuntu-3@192.168.88.141
+  105  ssh -t ansible ubuntu-3@192.168.88.141
+  106  ssh -i ansible ubuntu3@192.168.88.14
+  107  ssh -i ansible ubuntu3@192.168.88.142
+  108  ssh -i ansible ubuntu-3@192.168.88.142
+  109  ssh -i ansible ubuntu1@192.168.88.142
+  110  ssh -i ansible ubuntu1@192.168.88.141
+  111  ssh -i ansible ubuntu-3@192.168.88.141
+  112  ssh -i ansible ubuntu1@192.168.88.142
+  113  ssh -i ansible ubuntu1@192.168.88.140
+  114  ssh -i ansible ubuntu-3@192.168.88.141 
+  115  ssh -i ansible ubuntu3@192.168.88.142
+  116  ansible -v
+  117  sudoapt update
+  118  sudo apt update 
+  119  sudo apt upgrade -y
+  120  git clone git@github.com:Surkew777/Test.git
+  121  ls
+  122  cd Test
+  123  ls
+  124  touch emptyfile
+  125  git status
+  126  git add emptyfile
+  127  git commit -m "File is empty"
+  128  ls
+  129  git status
+  130  ls
+  131  git push
+  132  cd
+  133  git clone git@github.com:Surkew777/ansible_repo.git
+  134  ls
+  135  cd ansible_repo
+  136  ls
+  137  nano inventory
+  138  ls
+  139  git status
+  140  git add .
+  141  git commit -m "File modified, One must finish what one thought have wisely started"
+  142  git push 
+  143  cd
+  144  git clone git@github.com:Surkew777/ansible_repo.git
+  145  cd ansible_repo
+  146  ls
+  147  nano inventory 
+  148  git status
+  149  git add .
+  150  git commit -m "File  has been altered, One must finish what one once thought to have started so wisely"
+  151  git push 
+  152  cd
+  153  sudo apt-get install software-properties-common
+  154  sudo apt-add-repository ppa:ansible/ansible
+  155  sudo apt update 
+  156  sudo apt install ansible
+  157  ansible --version
+  158  cd
+  159  ls
+  160  cd ansible_repo
+  161  ansible all --key-file ~/ansible -i inventory -m ping
+  162  cd
+  163  ls
+  164  pwd
+  165  cd ansible_repo
+  166* cat ~/ansible.pub
+  167  ansible all --key-file /home/machine2/ansible -i inventory -m ping
+  168  cd
+  169  cd ansible_repo
+  170  ls
+  171  nano inventory 
+  172  ansible all --key-file /home/machine2/ansible -i inventory -m ping
+  173  ansible all --key-file ~/ansible -i inventory -m ping
+  174  nano inventory
+  175  ansible all --key-file ~/ansible -i inventory -m ping
+  176  nano inventory
+  177  wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+  178  sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+  179  sudo apt-get update
+  180  sudo apt-get install code
+  181  code inventory
+  182  cat inventory
+  183  ansible all --key-file ~/ansible -i inventory -m ping
+  184  code ansible.cfg
+  185  ls
+  186  cat ansible.cfg
+  187  ls -al /ect/asible
+  188  ls -al /etc/ansible
+  189  cat /etc/ansible/ansible.cfg
+  190  ansible all -m ping
+  191  ansible all --list host 
+  192  ansible all --list-hosts
+  193  ansible all -m gather_facts
+  194  ansible all -m gather_facts --limit ubuntu3@192.168.88.142
+  195  git status
+  196  git add .
+  197  git status
+  198  git commit -m "First ansible commit "
+  199  git push
+  200  history 
