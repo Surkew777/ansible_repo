@@ -1,0 +1,18 @@
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [ubuntu1@192.168.88.140]
+ok: [ubuntu-3@192.168.88.141]
+ok: [ubuntu3@192.168.88.142]
+
+TASK [install apache2 package] *************************************************
+ok: [ubuntu-3@192.168.88.141]
+ok: [ubuntu3@192.168.88.142]
+ok: [ubuntu1@192.168.88.140]
+
+PLAY RECAP *********************************************************************
+ubuntu-3@192.168.88.141    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+ubuntu1@192.168.88.140     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+ubuntu3@192.168.88.142     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

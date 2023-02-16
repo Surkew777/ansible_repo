@@ -1,0 +1,9 @@
+---
+- name: Set timezone to Athens
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Set timezone to Athens
+      timezone:
+        name: Europe/Dublin

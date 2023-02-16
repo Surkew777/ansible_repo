@@ -1,0 +1,19 @@
+---
+- name: Install VLC Player
+  hosts: vlc
+  become: true
+
+  tasks:
+    - name: Add VLC PPA repository
+      apt_repository:
+        repo: ppa:videolan/master-daily
+        state: present
+
+    - name: Update package index
+      apt:
+        update_cache: yes
+
+    - name: Install VLC
+      apt:
+        name: vlc
+        state: present
